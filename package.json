@@ -1,0 +1,21 @@
+{
+  "name": "saluttem_seo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/firebase": "^6.0.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "firebase": "^7.15.4",
+    "nuxt": "^2.13.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/vuetify": "^1.11.2"
+  }
+}
