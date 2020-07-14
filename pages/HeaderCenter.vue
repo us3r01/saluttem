@@ -13,7 +13,7 @@
                                     ¡Contáctanos!
                                 </h3>
                             </v-responsive>
-                            <v-btn large class="px-5" color="#57C3BD" dark to="/productos" v-if="breakpoint">
+                            <v-btn large class="px-5" color="#57C3BD" dark to="/allproducts" v-if="breakpoint">
                                 Ver productos
                             </v-btn>
                         </v-col>

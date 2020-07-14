@@ -77,7 +77,7 @@ export default {
             }],
             highlightedTestimonial: {
                 blurb: 'Este año dos mil veinte nos ha enseñado que la unión es lo más importante. Juntos tendremos que superar la contingencia y que mejor que aportando nuestros mejores esfuerzos desde casa. Yo apuesto por la tecnología y por que las personas tengas más acceso a ella para poder seguir trabajando y adquiriendo los sumistros necesarios',
-                person: 'Paula Sanchez Cortés',
+                person: 'Paulette C.',
                 title: 'Directora de Ventas'
             },
             testimonials: [{

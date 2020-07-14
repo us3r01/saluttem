@@ -56,16 +56,31 @@
 
         </v-row>
       <v-col
-        class="text-center"
         cols="12"
+        
       >
-              <v-divider></v-divider>
-        <div class="mt-4">
+      <v-divider></v-divider>
+      <v-row>
+        <v-col
+        cols="12"
+        md="8"
+        >
+        <div class="mt-4 text-right pr-12 mr-12">
         {{ new Date().getFullYear() }} — <strong>Saluttem</strong> 
         <v-icon>mdi-bitcoin</v-icon>
         <v-icon>mdi-credit-card-outline</v-icon>
         <v-icon>mdi-lumx</v-icon>
         </div>
+      </v-col>
+      <v-col
+        cols="6"
+        md="4"
+        >
+      <div class="mt-4 text-right">
+        Made with <v-icon>mdi-heart</v-icon> by <strong><a href="https://jesuslb.com" target="_blank">JTech</a></strong> 
+      </div>
+      </v-col>
+      </v-row>
       </v-col>
         </v-footer>
 <v-bottom-navigation

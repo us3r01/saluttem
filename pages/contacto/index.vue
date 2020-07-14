@@ -9,7 +9,7 @@
                             <v-form>
                                 <v-container pa-0>
                                     <v-row>
-                                        <v-col cols="12" class="mb-4 grey--text">
+                                        <v-col cols="12" class="mb-4 black--text text-h5">
                                             Ingresa tus datos
                                         </v-col>
                                         <v-col cols="12" md="6">
@@ -59,14 +59,11 @@
                                     </v-col>
     
                                     <v-col cols="12" md="4" class="pa-0">
-                                        <v-card-title>Informacion de contacto</v-card-title>
+                                        <v-card-title>Hablemos</v-card-title>
                                         <v-card-text>
                                             <div>+522228319799</div>
                                             <div>
                                                 <a href="#" rel="nofollow">ventas@saluttem.com</a>
-                                            </div>
-                                            <div>
-                                                <a href="#">@saluttem</a>
                                             </div>
                                         </v-card-text>
                                     </v-col>
