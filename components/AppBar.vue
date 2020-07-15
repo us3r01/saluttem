@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-app-bar large color="white">
+        <v-app-bar large color="#57C3BD">
             <v-app-bar-nav-icon @click="toggleDrawer('drawer')"/>
       <v-btn
         :height="breakpoint ? '120' : 'auto'"
