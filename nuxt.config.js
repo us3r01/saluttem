@@ -71,7 +71,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/robots',
     '@nuxtjs/pwa',
     [
       '@nuxtjs/firebase',
@@ -118,12 +117,6 @@ export default {
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
   */
- robots: {
-  UserAgent: '*',
-  Allow: '/',
-  Disallow: '/admin',
-  Sitemap: 'http://saluttem.com/sitemap.xml'
-},
  sitemap: {
   hostname: 'https://saluttem.com',
   gzip: true,
