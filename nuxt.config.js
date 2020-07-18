@@ -13,6 +13,9 @@ export default {
  head: {
   title: 'Productos para cuidar de ti',
   titleTemplate: '%s - Saluttem',
+  htmlAttrs: {
+    lang: 'es'
+  },
   meta: [ // Each object in this array is its own meta tag
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial scale=1' },
@@ -50,7 +53,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~plugins/components.js'
+    '~plugins/components.js',
+    '~/plugins/jsonld'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -58,11 +62,16 @@ export default {
   buildModules: [
     '@nuxtjs/vuetify',
     '@nuxtjs/dotenv',
+    '@nuxtjs/google-analytics'
   ],
+  googleAnalytics: {
+    id: 'UA-148575242-2'
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/robots',
     '@nuxtjs/pwa',
     [
       '@nuxtjs/firebase',
@@ -102,12 +111,31 @@ export default {
           }
       }
       }
-    ]
+    ],
+    '@nuxtjs/sitemap'
   ],
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
   */
+ robots: {
+  UserAgent: '*',
+  Disallow: '/',
+  Sitemap: 'http://saluttem.com/sitemap.xml'
+},
+ sitemap: {
+  hostname: 'https://saluttem.com',
+  gzip: true,
+  exclude: [
+    ''
+  ],
+  routes: [
+    '/',
+    '/acercade',
+    '/allproducts',
+    '/contacto'
+  ]
+},
 vuetify: {
   customVariables: ['~/assets/variables.scss'],
   treeShake: true,
