@@ -120,7 +120,7 @@ export default {
   */
  robots: {
   UserAgent: '*',
-  Disallow: '/',
+  Allow: '/',
   Sitemap: 'http://saluttem.com/sitemap.xml'
 },
  sitemap: {
