@@ -92,7 +92,7 @@ export default {
     return     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": this.name,
+      "name": this.nombre,
       "image": [
         this.images[0],
         this.images[1],
