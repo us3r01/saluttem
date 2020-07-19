@@ -40,6 +40,11 @@ export default {
     return {
 "@context": "http://www.schema.org",
   "@type": "HealthAndBeautyBusiness",
+  "image": [
+        "https://i.ibb.co/H7jm1ps/Por-un-mundo-m-s-sano.png",
+        "https://i.ibb.co/C8FrMJg/1.png",
+        "https://saluttem.com/equipo.jpg"
+  ],
   "name": "Saluttem",
   "url": "https://www.saluttem.com/",
   "sameAs": [
