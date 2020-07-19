@@ -78,7 +78,7 @@ export default {
     { property: 'og:description', content: this.desc},
     { property: 'og:image', content: this.images[0]},
     { property: 'og:url', content: `'https://saluttem.com'${this.$route.path}`},
-    { property: 'og:type', content: "website"},
+    { property: 'og:type', content: 'website'},
     { name:'keywords', content: ''},
     { name:'geo.region' ,content:'MX-PUE'},
     { name:'geo.placename', content:'Puebla'},
