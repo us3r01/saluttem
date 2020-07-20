@@ -19,7 +19,7 @@ export default {
   meta: [ // Each object in this array is its own meta tag
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial scale=1' },
-    { name:'theme-color', content:'#5FC7C2'},
+    { name:'theme-color', content:'#C0F0F7'},
     { name:'geo.region' ,content:'MX-PUE'},
     { name:'geo.placename', content:'Puebla'},
     { name:'geo.position', content:'19.001559;-98.202893'},
