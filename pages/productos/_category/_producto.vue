@@ -67,7 +67,7 @@
 
 <script>
 export default {
-    props: ['nombre', 'costo', 'costo_mayoreo', 'desc', 'images'],
+    props: ['nombre', 'costo', 'costo_mayoreo', 'desc', 'sku', 'color', 'images'],
     head() {
         return{
             title: this.nombre,
@@ -99,11 +99,14 @@ export default {
         this.images[2]
        ],
       "description": this.desc,
-      "sku": "0446310786",
-      "mpn": "925872",
+      "productID": this.sku,
+      "sku": this.sku,
+      "name": this.nombre,
+      "itemCondition": "NewCondition",
+      "color": this.color,
       "brand": {
         "@type": "Brand",
-        "name": "Saluttem"
+        "name": "Varias marcas"
       },
       "review": {
         "@type": "Review",
@@ -127,7 +130,8 @@ export default {
           "offerCount": "1",
           "lowPrice": this.costo,
           "highPrice": this.costo,
-          "priceCurrency": "MXN"
+          "priceCurrency": "MXN",
+          "url": `'https://saluttem.com'${this.$route.path}`
         }
 
     }
