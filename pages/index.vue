@@ -28,7 +28,7 @@ export default {
     { vmid: 'description', name: 'description', content: 'Saluttem, venta de equipo para la salud como cubrebocas KN95, mascarilla triple capa plisado, tela SMS, Sanitizantes, desinfectantes, caretas de distintos tipos, mayoreo y menudeo' },
     { property: 'og:title', content: "Productos para cuidar de ti"},
     { property: 'og:description', content: "Saluttem, venta de equipo para la salud como cubrebocas KN95, mascarilla triple capa plisado, tela SMS, Sanitizantes, desinfectantes, caretas de distintos tipos, mayoreo y menudeo"},
-    { property: 'og:image', content: "https://i.ibb.co/H7jm1ps/Por-un-mundo-m-s-sano.png"},
+    { property: 'og:image', content: "https://i.ibb.co/g6m1SC1/1.png"},
     { property: 'og:url', content: "https://www.saluttem.com"},
     { property: 'og:type', content: "website"},
     { name:'keywords', content: 'kn95, cubrebocas puebla, caretas, mascarillas, triple plisado, kn95 mayoreo puebla, cubrebocas kn95, desinfectante puebla, sanitizante puebla, tapete desifectante, gel antibacterial'}

@@ -82,7 +82,7 @@ export default {
                 { vmid: 'description', name: 'description', content: 'Enlistado por categorías: Cubrebocas, Sanitizadores, Tapetes, Gel antibacterial, Caretas y Guantes' },
                 { property: 'og:title', content: "Todos los productos"},
                 { property: 'og:description', content: "Enlistado por categorías: Cubrebocas, Sanitizadores, Tapetes, Gel antibacterial, Caretas y Guantes"},
-                { property: 'og:image', content: "https://i.ibb.co/H7jm1ps/Por-un-mundo-m-s-sano.png"},
+                { property: 'og:image', content: "https://i.ibb.co/6XvX6Jx/4.png"},
                 { property: 'og:url', content: "https://www.saluttem.com/allproducts"},
                 { property: 'og:type', content: "website"},
                 { name:'keywords', content: 'comercio electronico saluttem, lista de productos de la empresa de salud, catalogo de ofertas saluttem'}

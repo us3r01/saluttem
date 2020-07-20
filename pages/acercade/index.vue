@@ -60,7 +60,7 @@ export default {
                 { vmid: 'description', name: 'description', content: 'Saluttem es una comercializadora de equipo para la salud son sede en Puebla, Puebla. Contamos con precios de menudeo y mayoreo y envíos a toda la república Mexicana' },
                 { property: 'og:title', content: "Acerca de nosotros"},
                 { property: 'og:description', content: "Saluttem es una comercializadora de equipo para la salud son sede en Puebla, Puebla. Contamos con precios de menudeo y mayoreo y envíos a toda la república Mexicana"},
-                { property: 'og:image', content: "https://i.ibb.co/H7jm1ps/Por-un-mundo-m-s-sano.png"},
+                { property: 'og:image', content: "https://i.ibb.co/mtwh6F0/2.png"},
                 { property: 'og:url', content: "https://www.saluttem.com/acercade"},
                 { property: 'og:type', content: "website"},
                 { name:'keywords', content: 'empresa de cubrebocas en puebla, saluttem puebla, proveedores de cubrebocas, mayoreo equipo de salud'}

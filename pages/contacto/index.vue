@@ -128,7 +128,7 @@ export default {
                 { vmid: 'description', name: 'description', content: 'Contáctanos por whatsapp al 2228319799 o por email ventas@saluttem.com. Si lo prefires en nuestra página de facebook @saluttem podemos atenderte también (;' },
                 { property: 'og:title', content: "Hablémos"},
                 { property: 'og:description', content: "Contáctanos por whatsapp al 2228319799 o por email ventas@saluttem.com. Si lo prefires en nuestra página de facebook @saluttem podemos atenderte también (;"},
-                { property: 'og:image', content: "https://i.ibb.co/H7jm1ps/Por-un-mundo-m-s-sano.png"},
+                { property: 'og:image', content: "https://i.ibb.co/jTWsyFN/3.png"},
                 { property: 'og:url', content: "https://www.saluttem.com/contacto"},
                 { property: 'og:type', content: "website"},
                 { name:'keywords', content: 'Contacto dueños saluttem, correo electronico saluttem, contacto para comprar cubrebocas, datos de contacto saluttem, numero saluttem'}                
