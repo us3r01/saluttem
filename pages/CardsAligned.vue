@@ -100,7 +100,6 @@ export default {
             element.ruta = element.ruta.replace(/\)/g,'');
             element.ruta = element.ruta.replace(/\s+/g, '-').toLowerCase();
             element.ruta  = element.ruta.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-            console.log(element.ruta)
         });
     },
     mounted() {
