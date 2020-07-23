@@ -31,7 +31,7 @@
                     <v-col v-for="(item, i) in cards" :key="i" cols="12" class="text-center mb-5" md="4">
                         <v-hover v-slot:default="{ hover }">
                             <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }"  hover class="mx-auto" data-aos="fade-up" max-width="240" 
-                            :max-height="hover ? '367' :'330'" :to="`productos/${item.category}/${item.nombre}-${item.id}`">
+                            :max-height="hover ? '367' :'330'" :to="`productos/${item.category}/${item.ruta}-${item.id}`">
                                 <v-img :src="item.images[0]" max-widht="224" max-height="224">
                                 </v-img>
                                 <v-card-text class="text-h5 text-left black--text">$ {{item.costo}} <span class="text-caption justify-right green--text"> 5% OFF</span><br>
@@ -91,6 +91,16 @@ export default {
         this.cards.forEach(element => {
             var trim = element.desc.substring(0, l)
             element.desc = trim
+            element.ruta = element.nombre
+            element.ruta = element.ruta.replace(/\s+/g, '-').toLowerCase();
+            element.ruta = element.ruta.replace(/,/g, "");
+            element.ruta = element.ruta.replace(/\?/g,'');
+            element.ruta = element.ruta.replace(/\¿/g,'');
+            element.ruta = element.ruta.replace(/\(/g,'');
+            element.ruta = element.ruta.replace(/\)/g,'');
+            element.ruta = element.ruta.replace(/\s+/g, '-').toLowerCase();
+            element.ruta  = element.ruta.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            console.log(element.ruta)
         });
     },
     mounted() {

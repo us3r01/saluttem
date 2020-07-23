@@ -127,7 +127,8 @@ export default {
     '/',
     '/acercade',
     '/allproducts',
-    '/contacto'
+    '/contacto',
+    '/productos/Cubrebocas/kn95-mascarilla-cubrebocas-pf85wyCdhUAw2VGo07CP'
   ]
 },
 vuetify: {
