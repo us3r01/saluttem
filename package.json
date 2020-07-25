@@ -10,11 +10,18 @@
   },
   "dependencies": {
     "@nuxtjs/firebase": "^6.0.1",
+    "@nuxtjs/markdownit": "^1.2.10",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/sitemap": "^2.4.0",
     "firebase": "^7.15.4",
+    "markdown-it": "^11.0.0",
+    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-div": "^1.1.0",
+    "mavon-editor": "^2.9.0",
     "nuxt": "^2.13.0",
-    "nuxt-jsonld": "^1.4.10"
+    "nuxt-jsonld": "^1.4.10",
+    "vue-disqus": "^4.0.1",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",

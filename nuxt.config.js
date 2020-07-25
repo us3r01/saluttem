@@ -54,7 +54,9 @@ export default {
   */
   plugins: [
     '~plugins/components.js',
-    '~/plugins/jsonld'
+    '~/plugins/jsonld',
+    '~/plugins/disqus',
+    { src: '@/plugins/vue-mavon-editor', srr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -64,6 +66,17 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/google-analytics'
   ],
+  markdownit: {
+    preset: 'default',
+    injected: true,
+    linkify: true,
+    html: true,
+    breaks: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
+  },
   googleAnalytics: {
     id: 'UA-148575242-2'
   },
@@ -72,6 +85,7 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/markdownit',
     [
       '@nuxtjs/firebase',
       {
@@ -86,7 +100,7 @@ export default {
           measurementId: process.env.MEASURE_ID
         },
         services: {
-
+          auth: true,
           firestore: true,
           functions: {
             location: 'us-central1', // Default
@@ -118,7 +132,7 @@ export default {
   ** https://github.com/nuxt-community/vuetify-module
   */
  sitemap: {
-  hostname: 'https://saluttem.com',
+  hostname: 'https://wwww.saluttem.com',
   gzip: true,
   exclude: [
     ''
