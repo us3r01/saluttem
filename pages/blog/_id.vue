@@ -18,7 +18,7 @@
                          <div  :class="!breakpoint ? '' : 'pa-5 mx-5'" v-html="$md.render(this.articulo)"></div>
                 </v-card>
                 <v-divider></v-divider>
-                <vue-disqus shortname="saluttem" :identifier="this.titulo" :url="`https://saluttem.com${this.$route.path}`"></vue-disqus>
+                <Disqus shortname="saluttem" :identifier="this.titulo" :url="`http://saluttem.com/${this.$route.path}`"></Disqus>
                  </v-col>
                  </v-row>
             </v-container>

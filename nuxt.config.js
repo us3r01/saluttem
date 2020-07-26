@@ -54,8 +54,8 @@ export default {
   */
   plugins: [
     '~plugins/components.js',
-    '~/plugins/jsonld',
-    '~/plugins/disqus',
+    '~plugins/jsonld',
+    '~plugins/disqus',
     { src: '@/plugins/vue-mavon-editor', srr: false }
   ],
   /*
