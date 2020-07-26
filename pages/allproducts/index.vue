@@ -35,8 +35,8 @@
                         </template>
                               <v-list>
                                 <v-list-item
-                                  v-for="(item, index) in categorias"
-                                  :key="index"
+                                  v-for="(item, i) in categorias"
+                                  :key="i"
                                   @click="filter(i)"
                                 >
                                   <v-list-item-title>{{ item }}</v-list-item-title>

@@ -132,7 +132,7 @@ export default {
   ** https://github.com/nuxt-community/vuetify-module
   */
  sitemap: {
-  hostname: 'https://wwww.saluttem.com',
+  hostname: 'https://saluttem.com',
   gzip: true,
   exclude: [
     ''
