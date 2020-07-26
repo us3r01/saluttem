@@ -18,7 +18,7 @@
                          <div  :class="!breakpoint ? '' : 'pa-5 mx-5'" v-html="$md.render(this.articulo)"></div>
                 </v-card>
                 <v-divider></v-divider>
-                <Disqus shortname="saluttem" :identifier="this.titulo" :url="`http://saluttem.com/${this.$route.path}`"></Disqus>
+                <Disqus shortname='saluttem' :pageConfig="pageConfig" />
                  </v-col>
                  </v-row>
             </v-container>
@@ -54,6 +54,11 @@ props: ['titulo', 'desc', 'p_img', 'ultima_edicion', 'articulo'],
     },
     data() {
         return {
+            pageConfig: {
+                title: this.titulo,
+                identifier: `https://www.saluttem.com${this.$route.path}`,
+                url: `https://www.saluttem.com${this.$route.path}`
+            },
            isHydrated: false,
         }
     },
