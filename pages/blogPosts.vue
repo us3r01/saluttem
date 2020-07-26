@@ -1,14 +1,18 @@
 <template>
     <div>
         <section>
-            <v-divider class="mt-5 mb-4 text-left"  />
-            <h1>
-                Aprende con nosotros
+            <v-divider class="mt-5 mb-4 "  />
+            <v-row>
+                <v-col>
+            <h1 class="text-center">
+                Artículos
             </h1>
+            </v-col>
+            </v-row>
             <v-divider class="mt-5 mb-4 mx-auto"/>
             <v-container>
-                <v-row>
-                    <v-col v-for="item in posts" :key="item.titulo" sm="6">
+                <v-row v-for="item in posts" :key="item.titulo">
+                    <v-col  sm="6">
                         <v-card>
                             <v-img :src="item.post_img" :atl="item.titulo" height="200px">
     
@@ -23,7 +27,7 @@
                                 {{item.preview_desc}}
                             </v-card-text>
                             <v-card-actions>
-                                <v-btn :to="{path: '/blog/' + item.ruta, params: {doc_id: item.doc_id}}" nuxt color="primary">
+                                <v-btn :to="{path: '/blog/' + item.ruta, params: {doc_id: item.doc_id}}" nuxt dark color="#57C3BD">
                                     Leer
                                 </v-btn>
                             </v-card-actions>

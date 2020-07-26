@@ -9,6 +9,7 @@
             <v-container>
             <TryIt />
             </v-container>
+            <Posts />
         </v-main>
     </div>
 </template>
@@ -20,6 +21,7 @@ import Slider from './SliderCard';
 import CardsVideos from './CardsVideos';
 import Demo from './Demo';
 import TryIt from './TryIt';
+import Posts from './blogPosts';
 export default {
     head() {
         return{
@@ -108,7 +110,8 @@ export default {
         Slider,
         CardsVideos,
         Demo,
-        TryIt
+        TryIt,
+        Posts
     }
 }
 </script>
