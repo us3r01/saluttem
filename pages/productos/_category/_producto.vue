@@ -30,8 +30,11 @@
                             <div class="text-h4 font-weight-light mt-2">
                                 $ {{costo}}
                             </div>
+                            <div class="text-body mt-2">
+                               Costo por mayoreo $ {{costo_mayoreo}}
+                            </div>
                             <div class="text-h5 font-weight-thin mt-2">
-                                IVA Incluido
+                                IVA adicional si se requiere factura
                             </div>
                             <div class="mt-2">
                             <v-text-field
