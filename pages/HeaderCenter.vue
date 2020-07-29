@@ -31,7 +31,7 @@
                     </v-row>
                     <v-row>
                         <v-col class="text-center ">
-                            <v-btn  rounded class="px-5" color="#57C3BD" dark to="/allproducsts">
+                            <v-btn  rounded class="px-5" color="#57C3BD" dark to="/allproducts">
                                 Ver productos
                             </v-btn>
                         </v-col>
