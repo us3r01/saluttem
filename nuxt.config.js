@@ -143,7 +143,8 @@ export default {
     '/allproducts',
     '/contacto',
     '/productos/Cubrebocas/kn95-mascarilla-cubrebocas-pf85wyCdhUAw2VGo07CP',
-    '/productos/Cubrebocas/cubrebocas-tres-capas-plisado-de-costura-oo9cOrCn2XmwIMMzH8T8'
+    '/productos/Cubrebocas/cubrebocas-tres-capas-plisado-de-costura-oo9cOrCn2XmwIMMzH8T8',
+    '/blog/diferencia-entre-mascarilla-n95-y-kn95-HMNvnZISKs9l9eRVqdWW'
   ]
 },
 vuetify: {
