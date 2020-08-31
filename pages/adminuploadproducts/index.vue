@@ -11,9 +11,9 @@
                         <v-text-field v-model="request.color" label="Color"></v-text-field>
                         <v-select :items="categorias" label="Categoría" outlined></v-select>
                         <v-textarea name="input-7-1" filled label="Descripcion" auto-grow v-model="request.desc"></v-textarea>
-                        <v-textarea name="input-7-1" filled label="Images"  background-color="#57C3BD" class="text-white" auto-grow></v-textarea>
-                        <v-btn color ="#57C3BD" dark>Crop Images and push</v-btn>
-                        <v-btn color ="black" dark>Agregar</v-btn>
+                        <v-text-field v-model="temp" label="Link imágen"></v-text-field>
+                        <v-btn color ="#57C3BD" dark @click="add_image">Add image</v-btn>
+                        <v-btn color ="black" dark @click="add_product">Agregar</v-btn>
                     </v-col>
                 </v-row>
             </v-container>
@@ -42,9 +42,26 @@ export default {
                 images: [],
                 nombre: '',
                 sku: '3955317',
-            }
+            },
+            temp: ''
         }
     },
+    methods: {
+        add_image(){
+            this.request.images.push(this.temp)
+            this.temp = ''
+        },
+        async add_product(){
+            try{
+            await this.$fireStore.collection("productos").doc().set(this.request);
+            alert("Articulo agregado con éxito")               
+            }
+            catch(e){
+                alert(e)
+            }
+
+        }
+    }
 
 }
 </script>
